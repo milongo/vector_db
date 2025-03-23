@@ -1,6 +1,6 @@
 # Vector database in Rust
 
-This is a blog about writing a vector database in Rust. The blog is available at https://milongo.github.io/vector_db/.
+This is a blog about writing a vector database in Rust. The blog is available [here](https://milongo.github.io/vector_db/).
 
 ## Introduction to vector databases
 
