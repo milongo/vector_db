@@ -123,3 +123,6 @@ Nearest neighbour: Vector { id: 2, data: [4.0, 5.0, 6.0] }
 Now, all this is not really impressive at all. Our operations are inefficient: our search algorithm and euclidean distance function have linear time complexity (for the search algorithm `O(n)` if there are `n` vectors in our database and for the euclidean distance `O(k)` if the dimensionality of our vectors is `k`.)
 And because we're holding everything in memory, we're also taking `O(n)` space.
 Imagine having to search thousands of times, and every single time we'd have to go through these operations. 
+Our update function is also inefficient, we iterate over all the vectors in the database until we find the ID! We should probably use a hashmap here.
+
+To conclude, we built a *very* simple version of a vector database. Fundamentally, it's not that complicated, but to actually be able to use this in real-world scenarios we'll need to make all of this more efficient. We'll have to write faster versions of updating, searching, computing distances, etc.
